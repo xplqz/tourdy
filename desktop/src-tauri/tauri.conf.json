@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "투어디",
+  "mainBinaryName": "Tourdy",
+  "version": "1.0.0",
+  "identifier": "com.monoclesoftware.tourdy",
+  "build": {
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "투어디",
+        "url": "https://xplqz.github.io/tourdy/",
+        "width": 1100,
+        "height": 800,
+        "minWidth": 380,
+        "minHeight": 600,
+        "center": true,
+        "backgroundColor": "#141b33"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "Monocle Software",
+    "copyright": "© 2026 Monocle Software",
+    "category": "Education",
+    "shortDescription": "공부한 시간만큼 떠나는 여행",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "webviewInstallMode": { "type": "downloadBootstrapper" },
+      "nsis": {
+        "languages": ["Korean"],
+        "installMode": "currentUser"
+      }
+    }
+  }
+}
