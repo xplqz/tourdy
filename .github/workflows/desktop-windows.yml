@@ -42,6 +42,7 @@ jobs:
         with:
           projectPath: desktop
           tagName: desktop-v__VERSION__
+          assetNamePattern: 'Tourdy_[version]_[arch][setup][ext]'
           releaseName: '투어디 PC v__VERSION__'
           releaseBody: '윈도우용 투어디 설치 파일입니다. 아래 Assets에서 .exe를 받아 실행하세요.'
           releaseDraft: false
