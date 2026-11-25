@@ -135,3 +135,7 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
   - 새 가공본 SHA-256 85430dbc18f5f54e16d21698450cf15538ac728921913550a2dd353d249e1d2a
   - 같이 받았지만 안 쓴 파일(기록용 X): 36897 icmusic(CC BY 4.0), 505517 aldergrove_studios(CC BY 4.0), 700503 supersnd(CC0), 832934 kevp888(CC BY 4.0)
 - 4차 수정(04:0x KST): 너무 둔탁하다는 의견 → 전체 저역통과 3.2k/5k 제거(7.5k만), 엔진 저역통과 900→2200Hz·음량 낮춤, 250Hz -3dB. 새 SHA-256 4442898178879701c5997c9e46bee8b95eb68b44b3493fba9332f429d178f360
+
+## 지도 테마 미리보기 교체 (04:1x KST)
+- derived/map-theme-previews/mt-{base,old,night,sat}{,-w,-g}.webp — 앱의 세계 지도(평면 -w, 지구본 -g)를 테마별로 화면 캡처해 만든 미리보기. 야경·위성은 위 NASA Black Marble / Blue Marble 가공본을 쓴 화면, 기본·고지도는 앱이 직접 그린 벡터 지도
+- 예전 일본 지역 그림 미리보기(mt-*-l.webp)는 앱에서 지움
