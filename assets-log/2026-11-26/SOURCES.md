@@ -140,3 +140,12 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
 - derived/map-theme-previews/mt-{base,old,night,sat}{,-w,-g}.webp — 앱의 세계 지도(평면 -w, 지구본 -g)를 테마별로 화면 캡처해 만든 미리보기. 야경·위성은 위 NASA Black Marble / Blue Marble 가공본을 쓴 화면, 기본·고지도는 앱이 직접 그린 벡터 지도
 - 예전 일본 지역 그림 미리보기(mt-*-l.webp)는 앱에서 지움
 - 04:3x KST: 야경 밝기 낮춤은 국내(한국·일본·미국 지역 지도)에만 적용하기로 함 → world-night.webp, globe-night-4096.webp는 원래 가공본으로 되돌림(어두운 버전 기록 삭제). 기본 테마 지구본 바다색 진하게(강조색 18%→32%), 기본·야경 미리보기 다시 만듦
+
+## 일본 도도부현·미국 주 경계 (기본·네온 테마 국내 지도, 05:0x KST)
+| 원본 | 출처 | 라이선스 |
+|---|---|---|
+| originals/boundaries/polbnda_jpn.shp/.dbf | 국토지리원(GSI) 지구지도 일본 2016 (Global Map Japan), npm jpn-atlas 1.0.2에 들어 있는 원본 | 국토지리원 콘텐츠 이용규약(출처 표시: 「出典：国土地理院 地球地図日本」) · jpn-atlas 코드는 BSD-3 |
+| originals/boundaries/states-albers-10m.json | U.S. Census Bureau Cartographic Boundary, npm us-atlas 3.0.1 | 미국 정부 저작물(퍼블릭 도메인) · us-atlas 코드 ISC |
+- 가공: derived/build.py로 도도부현·주 단위로 합치고 단순화 → derived/rg-shapes.js (SHA-256 a0e76e5c388d739fc76e54941c365e1be6938b20ae11248f0617ee4490103175)
+- 앱 안 출처 표시: 설정 → 소리 아래 'Japan boundaries: GSI Global Map Japan · US boundaries: U.S. Census Bureau'
+- 네온 테마 미리보기 derived/map-theme-previews/mt-neon*.webp
