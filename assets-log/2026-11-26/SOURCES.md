@@ -10,7 +10,7 @@
 | 원본 파일 | 설명 | 앱에서 쓴 파일 | SHA-256 (원본) |
 |---|---|---|---|
 | `originals/design-jp-base.png` (896x1200) | 일본 지도 시안 3번 — 파란 윤곽선 | `derived/rg-jp-base.webp` (WebP 변환만) | `23108c4b6bf98311235746df46cf41185ac2f7dbb5df8180e7d0313ce8cccd38` |
-| `originals/design-jp-night.png` (896x1200) | 일본 지도 시안 1번 — 야경 | `derived/rg-jp-night.webp` (WebP 변환만) | `7b1506dac6ea60cf1fac37c14984fb50c5fe98ca0337ff9c7acba01733e9efee` |
+| `originals/design-jp-night.png` (896x1200) | 일본 지도 시안 1번 — 야경 (03:13까지 야경 테마로 사용, 이후 NASA Black Marble로 교체) | `derived/rg-jp-night-design.webp` (WebP 변환만) | `7b1506dac6ea60cf1fac37c14984fb50c5fe98ca0337ff9c7acba01733e9efee` |
 | `originals/design-jp-relief-unused.png` (896x1200) | 일본 지도 시안 2번 — 종이 입체 지형 (앱에 쓰지 않음) | — | `90357eed0f4956ca6737c1aa9ff95a07adf75d870f100ab64052c713ae1bd77c` |
 
 - 위 시안은 사용자가 준비해 대화에 올린 이미지입니다.
@@ -41,12 +41,45 @@
 | `derived/world-sat.webp` | Global | Equal Earth, 동경 150° 중심 (세계 평면 지도) |
 | `derived/globe-sat-4096.webp` | Global | 정방형 4096x2048 (지구본 표면) |
 
-## 3. 그 밖의 데이터
+## 3. NASA 야경 사진 (Black Marble 2016 Color) — 03:13 추가
+
+- 자료: NASA Earth Observatory — *Earth at Night (Black Marble) 2016 Color Maps*, Suomi NPP VIIRS (NASA Earth Observatory images by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA GSFC)
+- 받은 곳: https://earthobservatory.nasa.gov/features/NightLights/page3.php
+- 이용 조건: 위 2번과 같음 (NASA Earth Observatory Image Use Policy, 필수 표기 "NASA")
+- 앱 표기: 야경 지도 오른쪽 위에 "NASA Black Marble"
+- 일본 야경 테마는 이 사진으로 교체함 (이전: 사용자 시안 1번)
+
+| 받은 원본 | 크기 | SHA-256 | 보관·사용 |
+|---|---|---|---|
+| BlackMarble_2016_D1.jpg (21600x21600) | 39,122,860 B | `449fdd6b2f6eec087f56b5a0dcee5ab3213ea0ade75ec746f38cea76f3acd442` | 용량이 커서 저장소에 넣지 않음 · 일본·한국·국내 야경에 사용 |
+| BlackMarble_2016_C1.jpg (21600x21600) | 59,097,456 B | `446fcc72755ebc3625f96d39f2bcb247016038b74c90c655a65991e6de71b3b5` | 저장소에 넣지 않음 · 아직 쓰지 않음 (유럽 지역 여행용) |
+| BlackMarble_2016_A1.jpg (업로드 중 8000x8000으로 줄어든 사본) | 2,590,891 B | `dac7c198fbf2c48f027c6aaf69ee3cf5156b993c3226856c81759fa9abe3720e` | `originals/nasa-blackmarble-2016-A1-8000x8000.jpg` · 미국 야경 |
+| BlackMarble_2016_B1.jpg (〃) | 2,512,901 B | `fdab28a9ccbab45e170fa91dbeba53b56562a9e729af1b096a30a57e61b68c4c` | `originals/nasa-blackmarble-2016-B1-8000x8000.jpg` · 미국 야경 |
+| BlackMarble_2016_3km.jpg (업로드 중 8000x4000으로 줄어든 사본) | 1,676,318 B | `bad11f716f4dc099114836c27650ce0e88b4a2cb2837a062d4a3c9217a0be74b` | `originals/nasa-blackmarble-2016-global-8000x4000.jpg` · 세계 지도·지구본 |
+| BlackMarble_2016_A2.jpg (〃 8000x8000) | 539,061 B | `033058a3e7278030260796b6e688da0f0994a72039910c53a9c1d8aeaa71cf5c` | 받기만 하고 쓰지 않음 |
+| BlackMarble_2016_B2.jpg (〃) | 1,751,557 B | `4b88072aaf7f769197123338588d6792413d5b178da6213bb4a5414fd751a532` | 〃 |
+| BlackMarble_2016_C2.jpg (〃) | 995,488 B | `e48f1795ed18829490768d528321c04da033b5efa699988495bf17101fe12109` | 〃 |
+| BlackMarble_2016_D2.jpg (〃) | 1,093,399 B | `6af9304c14a5861f7ca3232dfd72fb9842ae7cb3b4637d3a1837b740af9d66a8` | 〃 |
+
+만든 파일 (위성 사진과 같은 틀·투영으로 다시 그리고 밝기를 약간 올림: 값×1.12+4):
+
+```
+1ce495b34848dbce1d9329a046c0f3adc0bf18b519387ee67c4e97a78051bd96  rg-jp-night.webp
+31847e9fc049d41cf27a6a0baf584c38f884705a27da9e282dc04187499b468b  rg-kr-night.webp
+e2eae219c9e46eff3debc79f82b231691fdbe8f71d77ef4289a4c747b246c491  rg-us-night.webp
+35976e1fb82880bf4e2d71bdcc2c9eacc9aff816b84e40a43006104a923f69f1  kr-night.webp
+5973ec71879ff118eae6b9b08924708fef31bef6e499d50e1bb0e9832223b26f  world-night.webp
+b893ff130b019c885c55c88aa19057425972ec74b3a39f67b6ab6d06cee71f39  globe-night-4096.webp
+6a5fed617046c2c6b3910c316ddf37b35db3d38c675d35fe5cd9d65da9afcd52  mt-night.webp
+3ad4ce91dc2e5c5549d8f6beb940ee0e4114de774eef55fcf1c258cc48f04c3e  mt-night-l.webp
+```
+
+## 4. 그 밖의 데이터
 
 - 지구본의 나라 윤곽: 앱에 이미 있던 세계 지도 데이터(js/travel-map.js의 WMAP, 공개 데이터)를 위경도로 되돌려 쓴 것. 새 외부 자료 없음.
 - 수속 효과음(js/checkin-sound.js): 외부 음원 없이 코드로 합성한 소리.
 
-## 4. 파일 해시 (derived/)
+## 5. 파일 해시 (derived/, 처음 기록 시점)
 
 ```
 0d375511bc0c853f4d7441ca3d0e14d0f415739d5ee754e4851cdc6e34bfecd9  globe-sat-4096.webp
