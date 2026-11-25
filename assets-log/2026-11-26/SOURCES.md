@@ -129,3 +129,8 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
   - bus door: 1.30–2.70초(문 덜컥 부분)만 사용, 0.75초 뒤에 겹침
   - 합친 뒤 저역통과 3.2k/5k + 고역 -2dB(먹먹하게), -19 LUFS, 리미터. 길이 2.2초
 - 2차 수정(03:54 KST): puff 앞부분의 낮은 '오옹' 음(약 200·450·750Hz에서 미끄러지는 음)도 같은 방식으로 제거 + 160Hz 아래 잘라냄. 새 SHA-256 bd501fa6366080de2ab258fdfdf30cd99eb58f846da9bc0a4df58c6f933ee50c
+- 3차 수정(04:0x KST): 엔진 공회전 소리 추가
+  - 원본 추가: originals/548210__werneristes__bus-parks.wav — https://freesound.org/people/werneristes/sounds/548210/ ("Bus parks.wav" by werneristes) — CC0 — SHA-256 ee6488f44925e80657dc507e56a6b16eb0bea7e585fb421ab925455386fd0dfc
+  - 30.0–33.4초 엔진 소리를 저역통과 900Hz로 낮게 깔고(앞 0.35초 페이드인, 뒤 1.2초 페이드아웃), 0.25초에 쉬익, 1.0초에 문 덜컥. 총 3.4초
+  - 새 가공본 SHA-256 85430dbc18f5f54e16d21698450cf15538ac728921913550a2dd353d249e1d2a
+  - 같이 받았지만 안 쓴 파일(기록용 X): 36897 icmusic(CC BY 4.0), 505517 aldergrove_studios(CC BY 4.0), 700503 supersnd(CC0), 832934 kevp888(CC BY 4.0)
