@@ -117,3 +117,14 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
 - 가공본: derived/arr-train.mp3 — 0.72초부터 2.6초만 잘라냄, 저역통과 2.6kHz/4.2kHz + 고역 -3dB(먹먹하게), 앞 0.12초·뒤 1.0초 페이드, 음량 -18 LUFS
   - SHA-256: 325d51046522ceb07252ca3f5a8bc400c51300c83d5faa4617389a5b1798c1ee
   - 앱 경로: sounds/arr-train.mp3 (도착 화면 · 기차/KTX/무궁화호 등 모든 철도)
+
+## 버스 도착 효과음 (2026-11-26 03:5x KST)
+| 원본 | 출처 | 라이선스 | SHA-256 |
+|---|---|---|---|
+| originals/29610__dobroide__20070117puff.wav | https://freesound.org/people/dobroide/sounds/29610/ ("20070117.puff.wav" by dobroide) | CC BY 4.0 — 앱 안 저작자 표시 필요(설정 → 소리 아래에 표시함) | d2166c39df344e3f6169dafc2d33adc41650c32abed8fecb9c6b902cd64350f6 |
+| originals/380320__zombiechick__bus-door.wav | https://freesound.org/people/zombiechick/sounds/380320/ ("bus door" by zombiechick) | CC0 | 4a27772fa1deeec1530002a757ff2ffb6e0ea348ceeef9ba754a9c0b265450b7 |
+- 라이선스는 2026-11-26 freesound 페이지에서 확인
+- 가공본 derived/arr-bus.mp3 (SHA-256 926e13a36c75781a22541c6be243fe14ef05719695b8b0394b9d58ab24b7bc9d)
+  - puff: 미끄러지듯 올라가는 고주파 휘슬음(약 3.8–4kHz, 7.6–7.9kHz 등)을 프레임별 스펙트럼 억제로 제거, 0–1.15초만 사용
+  - bus door: 1.30–2.70초(문 덜컥 부분)만 사용, 0.75초 뒤에 겹침
+  - 합친 뒤 저역통과 3.2k/5k + 고역 -2dB(먹먹하게), -19 LUFS, 리미터. 길이 2.2초
