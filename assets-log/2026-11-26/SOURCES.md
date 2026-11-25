@@ -110,3 +110,10 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
 | derived/rg-us-night-dim.webp | 1b506791402c7beeb1c52f08876e23365be34a6d164814619ad4565ce3a2cc2a |
 | derived/world-night-dim.webp | 1ac856a13dbb46af323857c9e67aafd825323c2b19395d1504aff4875d7c917e |
 | derived/globe-night-4096-dim.webp | 18c6d0ca6db4ddfc2ce37d536f8f33d3a76fe11fcdb526c60f93f727c9696004 |
+
+## 기차 도착 효과음 (2026-11-26 03:3x KST)
+- 원본: originals/train-passing-by.mp3 — 사용자가 직접 받아 온 파일 (저작권 없는 효과음). 출처 URL·라이선스: **확인 필요**
+  - SHA-256: daf9fcecfcaa1968270244a9ddafff7966c6b950c453b64cb7ea8be55bf26ed8
+- 가공본: derived/arr-train.mp3 — 0.72초부터 2.6초만 잘라냄, 저역통과 2.6kHz/4.2kHz + 고역 -3dB(먹먹하게), 앞 0.12초·뒤 1.0초 페이드, 음량 -18 LUFS
+  - SHA-256: 325d51046522ceb07252ca3f5a8bc400c51300c83d5faa4617389a5b1798c1ee
+  - 앱 경로: sounds/arr-train.mp3 (도착 화면 · 기차/KTX/무궁화호 등 모든 철도)
