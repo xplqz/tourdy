@@ -99,3 +99,14 @@ aee7517b6595d7837ca7ce38541a48d298be526dda2349dac206e1528c64faf4  rg-kr-sat.webp
 96607ce22e0dfb7c05a50549506c25495638101016c06ca3eb336a44531593b5  rg-us-sat.webp
 672c6677dc1cffec39affecea148c5beec63f7e294322925d8623412ae3cfb19  world-sat.webp
 ```
+
+## 야경 밝기 낮춤 (2026-11-26 03:2x KST)
+같은 NASA Black Marble 원본에서 만든 야경 지도의 밝은 부분을 눌러 줌 (밝은 곳 압축 `1.1L/(1+0.85L)`, 채도 90%, 감마 1.12).
+| 파일 | SHA-256 |
+|---|---|
+| derived/kr-night-dim.webp | 987dd743a6c2ee5e74bdc1dca4b5d379135202bab7dd0d8e92700bc51ed2186d |
+| derived/rg-kr-night-dim.webp | 80e7f465b209074583fb79cf324fd11967327ea67ebb1a1496789add3d57a9e9 |
+| derived/rg-jp-night-dim.webp | 9af2cd2783f809065aa4dc8540d0866db3d59aa195fb9f0e66e17e8a4c5b3cb0 |
+| derived/rg-us-night-dim.webp | 1b506791402c7beeb1c52f08876e23365be34a6d164814619ad4565ce3a2cc2a |
+| derived/world-night-dim.webp | 1ac856a13dbb46af323857c9e67aafd825323c2b19395d1504aff4875d7c917e |
+| derived/globe-night-4096-dim.webp | 18c6d0ca6db4ddfc2ce37d536f8f33d3a76fe11fcdb526c60f93f727c9696004 |
